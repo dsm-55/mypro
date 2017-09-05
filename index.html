@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    .title{
+      text-align: center;
+      overflow: hidden;
+    }
+    .title span{
+      position: relative;
+      display: inline-block;
+    }
+    .title span::before{
+      content: '';
+      position: absolute;
+      top: 50%;
+      width: 1000px;
+      height: 1px;
+      left: 100%;
+      background-color: #333;
+    }
+    .title span::after{
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 100%;
+      width: 1000px;
+      height: 1px;
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="title"><span>测试文字</span></div>
+</body>
+</html>
